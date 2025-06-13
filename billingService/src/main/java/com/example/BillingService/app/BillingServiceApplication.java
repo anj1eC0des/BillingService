@@ -1,9 +1,13 @@
-package com.example.BillingService;
+package com.example.BillingService.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan("com.example.BillingService")
+@EntityScan("com.example.BillingService")
 public class BillingServiceApplication {
 
 	public static void main(String[] args) {
