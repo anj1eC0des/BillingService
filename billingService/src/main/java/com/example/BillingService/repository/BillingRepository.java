@@ -10,7 +10,6 @@ import com.example.BillingService.entity.Bill;
 
 @Repository
 public interface BillingRepository extends JpaRepository<Bill, Integer> {
-
     @Query("SELECT b FROM Bill b WHERE b.patientId= :patientId")
     public List<Bill> searchByPatientId(int patientId);
 }
